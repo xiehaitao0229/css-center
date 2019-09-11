@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #parent {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            /*auto和1fr换一下顺序就是左列自适应,右列不定宽了*/
+        }
+
+        #left {
+            margin-right: 10px;
+            height: 500px;
+            background-color: #f00;
+        }
+
+        #right {
+            height: 500px;
+            background-color: #0f0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div id="parent">
+            <div id="left">左列不定宽</div>
+            <div id="right">右列自适应</div>
+        </div>
+    </body>
+
+
+
+</body>
+
+</html>
